@@ -1,0 +1,133 @@
+/*
+ *  Core Owl Carousel CSS File
+ *  v1.3.3
+ */
+
+/* Clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* Display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  
+}
+
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  transition: height 500ms ease-in-out;
+}
+
+.owl-carousel .owl-item {
+  float: left;
+}
+
+.owl-controls {
+  top: -200px; /* Default top position */
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.owl-controls a {
+  color: #336699;
+}
+
+.owl-controls a:hover {
+  color: #336699;
+}
+
+.owl-controls .bg-prev,
+.owl-controls .bg-next {
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #336699;
+  transform: rotate(45deg);
+}
+
+.owl-controls .bg-prev:before,
+.owl-controls .bg-next:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 2px solid #336699;
+}
+
+.owl-controls .prev,
+.owl-controls .next {
+  z-index: 11;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 32px;
+}
+
+.owl-controls .prev {
+  left: 15px;
+}
+
+.owl-controls .next {
+  right: 15px;
+}
+
+.owl-theme .owl-controls .owl-page {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.owl-theme .owl-controls .owl-page a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  filter: Alpha(Opacity=50); /* IE7 fix */
+  opacity: 0.5;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #888;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  opacity: 1;
+}
+
+.owl-controls {
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
