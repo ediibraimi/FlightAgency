@@ -8,7 +8,7 @@ if (empty($_SESSION['name'])) {
 }
 
 if ($_SESSION['is_admin'] == 'true') {
-  header("Location: index.php");
+  header("Location: index.html");
 }
 
 $sql = "SELECT * FROM users";
