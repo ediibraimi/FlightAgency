@@ -8,7 +8,7 @@ if (empty($_SESSION['name'])) {
 }
 
 if ($_SESSION['is_admin'] != 'true') {
-  header("Location: index.html");
+  header("Location: index.php");
 }
 
 $sql = "SELECT * FROM contact_messages";

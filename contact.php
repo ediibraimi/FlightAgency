@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="page-direction-button">
-                        <a href="index.html"><i class="fa fa-home"></i>Go Back Home</a>
+                        <a href="index.php"><i class="fa fa-home"></i>Go Back Home</a>
                     </div>
                 </div>
             </div>

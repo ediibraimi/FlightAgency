@@ -21,15 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($insertQuery->execute() === TRUE) {
             echo "New record created successfully";
-            header("Location:index.html?ordered=1");
+            header("Location:index.php?ordered=1");
         } else {
             echo "Error: " . $sql . "<br>";
         }
     } else {
         echo "All fields are required!";
-        header("Location:index.html?ordered=2");
+        header("Location:index.php?ordered=2");
     }
 } else {
     echo "Form not submitted!";
-    header("Location:index.html?ordered=3");
+    header("Location:index.php?ordered=3");
 }

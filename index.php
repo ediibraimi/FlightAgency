@@ -1,22 +1,22 @@
+
 <?php
 
-$ordered = isset($_GET['ordered']) ? $_GET['ordered'] : null;
-
-session_start();
-
-include_once('config.php');
-
-if (empty($_SESSION['email'])) {
-    header("Location: login.php");
-    exit();
-}
-
-
-?>
-
+    $ordered = isset($_GET['ordered']) ? $_GET['ordered'] : null;
+    
+    session_start();
+    
+    include_once('config.php');
+    
+    if (empty($_SESSION['email'])) {
+        header("Location: login.php");
+        exit();
+    }
+    
+    
+    ?>
 <!DOCTYPE html>
 <html>
-
+    
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -63,7 +63,7 @@ if (empty($_SESSION['email'])) {
                         </div>
                         <div class="tabs-content">
                             <ul class="social-links">
-                                <li><a href="login.php">Login<i class="fa fa-sign-in"></i></a></li>
+                                <li><a href="login.html">Login<i class="fa fa-sign-in"></i></a></li>
                                 <li><a href="signUp.php">SignUp<i class="fa fa-sign-in"></i></a></li>
                                 <li><a href="https://www.instagram.com/edi.ibraimi1/">follow us on instagram<i class="fa fa-instagram"></i></a></li>
 
