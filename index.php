@@ -63,7 +63,7 @@
                         </div>
                         <div class="tabs-content">
                             <ul class="social-links">
-                                <li><a href="login.html">Login<i class="fa fa-sign-in"></i></a></li>
+                                <li><a href="login.php">Login<i class="fa fa-sign-in"></i></a></li>
                                 <li><a href="signUp.php">SignUp<i class="fa fa-sign-in"></i></a></li>
                                 <li><a href="https://www.instagram.com/edi.ibraimi1/">follow us on instagram<i class="fa fa-instagram"></i></a></li>
 

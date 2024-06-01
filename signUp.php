@@ -53,7 +53,7 @@
 
 
                             <button class="w-100 btn btn-lg btn-warning" type="submit" name="submit">sign Up</button>
-                            <span style="color: white;">Already have an account: </span> <a style="text-decoration: none; color:orange;" href="login.html">Log in</a>
+                            <span style="color: white;">Already have an account: </span> <a style="text-decoration: none; color:orange;" href="login.php">Log in</a>
 
                         </form>
                     </div>
